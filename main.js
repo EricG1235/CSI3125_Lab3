@@ -43,6 +43,7 @@ function populateListProductChoices(slct1, slct2) {
 	for (i = 0; i < optionArray.length; i++) {
 			
 		var productName = optionArray[i];
+		var pic = document.createElement("img");
 		// create the checkbox and add in HTML DOM
 		var checkbox = document.createElement("input");
 		checkbox.type = "checkbox";
@@ -55,8 +56,123 @@ function populateListProductChoices(slct1, slct2) {
 		var label = document.createElement('label')
 		label.htmlFor = productName.name;
 		label.appendChild(document.createTextNode(productName.name+":$"+productName.price));
+		if(productName.name=="brocoli")
+		{
+			pic.src = "picture/brocoli.jpg";
+			pic.height=100;
+			pic.width=100;
+		}
+		else if(productName.name=="onion")
+		{
+			pic.src="picture/onion.jpg";
+			pic.height=100;
+			pic.width=100;
+		}
+		else if(productName.name=="carrot")
+		{
+			pic.src="picture/carrot.jpg";
+			pic.height=100;
+			pic.width=100;
+		}
+		else if(productName.name=="apple")
+		{
+			pic.src="picture/apple.jpg";
+			pic.height=100;
+			pic.width=100;
+		}
+		else if(productName.name=="orange")
+		{
+			pic.src="picture/orange.jpg";
+			pic.height=100;
+			pic.width=100;
+		}
+		else if(productName.name=="tomato")
+		{
+			pic.src="picture/tomato.jpg";
+			pic.height=100;
+			pic.width=100;
+		}
+		else if(productName.name=="potato")
+		{
+			pic.src="picture/potato.jpg";
+			pic.height=100;
+			pic.width=100;
+		}
+		else if(productName.name=="bread")
+		{
+			pic.src="picture/bread.jpg";
+			pic.height=100;
+			pic.width=100;
+		}
+		else if(productName.name=="corn")
+		{
+			pic.src="picture/corn.jpg";
+			pic.height=100;
+			pic.width=100;
+		}
+		else if(productName.name=="chocolate cake")
+		{
+			pic.src="picture/chocolate cake.jpg";
+			pic.height=100;
+			pic.width=100;
+		}
+		else if(productName.name=="milk")
+		{
+			pic.src="picture/milk.jpg";
+			pic.height=100;
+			pic.width=100;
+		}
+		else if(productName.name=="ice cream")
+		{
+			pic.src="picture/ice cream.jpg";
+			pic.height=100;
+			pic.width=100;
+		}
+		else if(productName.name=="cheese")
+		{
+			pic.src="picture/cheese.jpg";
+			pic.height=100;
+			pic.width=100;
+		}
+		else if(productName.name=="salmon")
+		{
+			pic.src="picture/salmon.jpg";
+			pic.height=100;
+			pic.width=100;
+		}
+		else if(productName.name=="tuna")
+		{
+			pic.src="picture/tuna.jpg";
+			pic.height=100;
+			pic.width=100;
+		}
+		else if(productName.name=="Veggie Burger Patty")
+		{
+			pic.src="picture/Veggie Burger Patty.jpg";
+			pic.height=100;
+			pic.width=100;
+		}
+		else if(productName.name=="beef")
+		{
+			pic.src="picture/beef.jpg";
+			pic.height=100;
+			pic.width=100;
+		}
+		else if(productName.name=="pork")
+		{
+			pic.src="picture/pork.jpg";
+			pic.height=100;
+			pic.width=100;
+		}
+		else if(productName.name=="egg")
+		{
+			pic.src="picture/egg.jpg";
+			pic.height=100;
+			pic.width=100;
+		}
+		label.appendChild(document.createElement("br"));
+		label.appendChild(pic);
 		s2.appendChild(label);
-		
 		// create a breakline node and add in HTML DOM
 		s2.appendChild(document.createElement("br"));
 		if(s2==null){
